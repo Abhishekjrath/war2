@@ -6,7 +6,7 @@ pipeline {
     }
 
     stages{
-        stage('Check and remove containers'){
+        stage('Check and remove container'){
             steps{
                 script{
                     def containerExists = sh(script: "docker ps -q -f name=abhi", returnStdout: true).trim()
