@@ -22,7 +22,7 @@ pipeline {
                 sh 'mvn clean package'
             }
         }
-        stage('Create image'){
+        stage('Create image '){
             steps{
                 sh 'sudo docker build -t app /var/lib/jenkins/workspace/webapp/'
             }
